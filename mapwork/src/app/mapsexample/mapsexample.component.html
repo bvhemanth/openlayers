@@ -1,0 +1,56 @@
+<header>
+	<div class="row">
+		<div class="col-sm-6">
+			<small>* Wait for some time untill it gets load</small>
+		</div>
+		<div class="col-sm-6 tar">
+			<div class="dropdown">
+			  	<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Enroco
+			  	<span class="caret"></span></button>
+			  	<ul class="dropdown-menu">
+			    	<li><a class="pointer" (click)="logout()">Logout</a></li>
+			  	</ul>
+			</div>
+		</div>
+	</div>
+</header>
+	<div class="pointer opennav" (click)="opennav()" style="position: absolute;z-index: 9;background-color: #fff;
+    padding: 3px;">
+			<i class="fa fa-angle-right" aria-hidden="true"></i>
+	</div>
+<div class="menu" *ngIf="navbar" style="position: absolute;width:250px;left:0px;background-color: #fff;z-index:99;height:100vh;text-align: center;">
+	<div class="row filterTitle">
+		<span style="margin:auto;">LAYERS</span>
+		<div class="pointer closenav" (click)="closeNav()">
+			<i class="fa fa-angle-left" aria-hidden="true"></i>
+		</div>
+	</div>
+	<div class="layers">
+		<div class="row">		
+			<div class="col-sm-6 tal">Tile Layer</div> 
+			<div class="col-sm-5 tar">
+				<mat-slide-toggle name="Tyle" [(ngModel)]="tyleLayer" (change)="layerChange($event,'Tyle')"></mat-slide-toggle> 
+			</div>
+			
+		</div>
+		<div class="row">
+			<div class="col-sm-6 tal">Image Layer</div> 
+			<div class="col-sm-5 tar">
+				<mat-slide-toggle name="Raster" [(ngModel)]="rasterLayer" (change)="layerChange($event,'Raster')"></mat-slide-toggle> 
+			</div>
+			
+		</div>
+	</div>	
+</div>
+<section>
+	<div id="map" class="map"></div>
+   	<!-- 	<select id="layer-select" [(ngModel)]="layername" (change)="onChange()">
+       		<option value="Normal">normal</option>
+       		<option value="Raster" selected>raster</option>
+       		<option value="Tyle">tyle</option>
+	       	<option value="RoadOnDemand">Road (dynamic)</option>
+	       	<option value="collinsBart">Collins Bart</option>
+	       	<option value="ordnanceSurvey">Ordnance Survey</option>
+		</select> -->
+</section>
+

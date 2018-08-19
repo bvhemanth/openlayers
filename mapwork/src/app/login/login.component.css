@@ -1,0 +1,13 @@
+form
+{
+	border:1px solid #ddd;
+	margin-top: 40px;
+	padding:10px;
+	border-radius:5px;
+	background-color: #fff;
+}
+section
+{
+	height: 100vh;
+	background-color: #ddd;
+}

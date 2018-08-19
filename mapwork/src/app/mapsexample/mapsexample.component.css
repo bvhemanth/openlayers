@@ -1,0 +1,49 @@
+header
+{
+	border-bottom:1px solid #ddd;
+	padding:3px 5px;
+}
+
+.btn-default , .btn-default:active , .btn-default:visited
+{
+	background-color: #fff;
+	border:1px solid #ddd;
+}
+
+.map{
+	height:90vh;
+	width:100%;
+}
+
+.filterTitle
+{
+	z-index:999;
+	border-bottom:4px solid lightblue;
+	font-size: 16px;
+	padding:5px 7px;
+	box-shadow: 1px 2px 3px #ddd !important;
+}
+.menu>div:nth-child(2) 
+{
+	background-color: #ddd;
+	padding-top:5px;
+	padding-bottom:5px;
+
+}
+
+div.layers>div.row 
+{
+	margin:5px 5px;
+	font-size: 12px;
+	background-color: #fff;
+	border-radius: 5px;
+	border:1px solid #ddd;
+	padding:5px 0px;
+}	
+
+
+.closenav
+{
+	position: absolute;right:-10px;height:35px;background-color: #fff;padding:3px;border:1px solid #ddd;top:0px;
+}
+.opennav{position: absolute;left:0px;height:35px;background-color: #fff;padding:3px;z-index: 99;border:1px solid #ddd;}

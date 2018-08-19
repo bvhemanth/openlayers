@@ -1,0 +1,6 @@
+.ol-zoom .ol-unselectable .ol-control
+{
+	position: absolute;
+    top: 0px;
+    left: 10px;
+}
